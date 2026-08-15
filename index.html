@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>Namrata Tiwari &amp; Ashwin Pandey</title>
+    <title>Namrata Tiwari &amp; Ashwin Pandey — Wedding Invitation</title>
   <meta name="description" content="You are warmly invited to celebrate our special day."/>
   <meta name="theme-color" content="#0b0806"/>
     <meta property="og:type" content="website"/>
@@ -317,286 +317,77 @@ body.site-revealed .twl-claim-wrap{opacity:1;visibility:visible}
   html{scroll-behavior:auto}
   .hint-pulse{animation:none}
 }
+
+/* TRADITIONAL HINDU INTRO */
+#intro{background:radial-gradient(70% 55% at 50% 48%,rgba(201,162,75,.18),transparent 60%),radial-gradient(70% 55% at 50% 100%,rgba(93,26,44,.55),transparent 68%),linear-gradient(180deg,#120b09 0%,#1a0d12 55%,#080504 100%);}
+#intro::before{content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;background-image:radial-gradient(circle at 15% 22%,rgba(240,215,154,.55) 0 1px,transparent 2px),radial-gradient(circle at 82% 17%,rgba(240,215,154,.45) 0 1px,transparent 2px),radial-gradient(circle at 70% 76%,rgba(240,215,154,.35) 0 1.5px,transparent 2.5px),radial-gradient(circle at 28% 68%,rgba(240,215,154,.35) 0 1.5px,transparent 2.5px);}
+.intro-head{top:7vh}.intro-head .eyebrow{margin-bottom:8px}.intro-head h1{font-size:clamp(1.65rem,6vw,2.6rem);margin-top:6px}.intro-head p{margin-top:8px;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:clamp(1rem,4vw,1.35rem)}
+.intro-deity{font-family:var(--serif);font-size:clamp(3rem,12vw,5rem);line-height:.9;color:var(--gold-light);text-shadow:0 0 28px rgba(240,215,154,.42);margin:10px 0 2px}
+.intro-est{font-size:.58rem;letter-spacing:.16em}
+.diya-stage{position:relative;z-index:4;width:min(78vw,390px);height:min(55vh,420px);display:flex;align-items:center;justify-content:center;transform:translateY(3vh)}
+.diya-glow{position:absolute;width:75%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,225,139,.42),rgba(201,162,75,.12) 38%,transparent 70%);filter:blur(10px);animation:diyaGlow 2.5s ease-in-out infinite}
+.diya-button{position:relative;width:min(52vw,250px);height:min(42vw,200px);background:none;cursor:pointer;touch-action:none;outline:none}
+.diya-bowl{position:absolute;left:10%;right:10%;bottom:11%;height:38%;border-radius:0 0 50% 50% / 0 0 80% 80%;background:linear-gradient(180deg,#f0d79a,#b67b31 65%,#70421f);border:1px solid rgba(255,233,176,.65);box-shadow:inset 0 8px 18px rgba(255,255,255,.18),0 18px 35px rgba(0,0,0,.55),0 0 30px rgba(240,215,154,.16)}
+.diya-bowl::before{content:"";position:absolute;left:4%;right:4%;top:-10%;height:28%;border-radius:50%;background:radial-gradient(ellipse,#4c2818 0 48%,#c9994e 51% 56%,#f0d79a 58% 63%,#8c5c27 65%);box-shadow:0 3px 8px rgba(0,0,0,.35)}
+.diya-bowl i{position:absolute;left:50%;top:-4%;width:16%;height:20%;border-radius:50% 50% 45% 45%;transform:translateX(-50%);background:#27140d;box-shadow:0 0 4px rgba(0,0,0,.4)}
+.diya-bowl b{position:absolute;left:20%;right:20%;bottom:18%;height:2px;background:rgba(255,233,176,.48);box-shadow:0 9px 0 rgba(255,233,176,.22)}
+.flame{position:absolute;z-index:5;left:50%;bottom:42%;transform-origin:50% 100%;border-radius:50% 50% 45% 45% / 70% 70% 35% 35%;filter:drop-shadow(0 0 12px rgba(255,186,68,.8));pointer-events:none}
+.flame-outer{width:24%;height:39%;transform:translateX(-50%) rotate(-3deg);background:linear-gradient(180deg,#fff6c7 0%,#ffd56b 35%,#ef8f22 72%,#9e3d18 100%);animation:flameFlicker .72s ease-in-out infinite alternate}
+.flame-inner{width:11%;height:21%;bottom:42%;transform:translateX(-50%);background:#fff8d8;filter:blur(.3px);animation:flameInner .52s ease-in-out infinite alternate}
+.flame-spark{position:absolute;z-index:6;left:50%;bottom:75%;width:5px;height:5px;border-radius:50%;background:#ffe9b0;box-shadow:0 0 12px 3px rgba(255,233,176,.75);animation:sparkRise 1.8s ease-in-out infinite}
+.petal-ring{position:absolute;width:86%;aspect-ratio:1;border:1px solid rgba(240,215,154,.24);border-radius:50%;box-shadow:0 0 0 18px rgba(240,215,154,.025),0 0 0 36px rgba(240,215,154,.018);animation:rotateRing 22s linear infinite}
+.petal-ring::before,.petal-ring::after{content:"✦  ✧  ✦  ✧  ✦  ✧  ✦  ✧";position:absolute;inset:-18px;display:flex;align-items:center;justify-content:center;color:rgba(240,215,154,.58);font-size:1.15rem;letter-spacing:1.4rem}
+.petal-ring::after{transform:rotate(45deg);font-size:.8rem;opacity:.65}
+.mandala{position:absolute;color:rgba(240,215,154,.42);font-size:2rem;animation:mandalaFloat 4s ease-in-out infinite}.mandala-a{top:12%;left:13%}.mandala-b{right:13%;bottom:15%;animation-delay:-2s}
+#intro.lit .diya-glow{animation:diyaIgnite .9s ease-out forwards}.diya-stage.lit{animation:diyaRise 1.1s ease-in forwards}.diya-button:focus-visible{filter:drop-shadow(0 0 10px rgba(240,215,154,.7))}
+.intro-music-note{margin-top:10px;color:rgba(232,221,196,.62);font-size:.7rem;letter-spacing:.06em}
+@keyframes diyaGlow{0%,100%{transform:scale(.9);opacity:.65}50%{transform:scale(1.08);opacity:1}}@keyframes diyaIgnite{0%{transform:scale(.7);opacity:.4}55%{transform:scale(1.28);opacity:1}100%{transform:scale(1.05);opacity:.9}}@keyframes flameFlicker{0%{transform:translateX(-50%) rotate(-5deg) scale(.96,1)}100%{transform:translateX(-50%) rotate(5deg) scale(1.04,.94)}}@keyframes flameInner{0%{transform:translateX(-50%) scale(.9,.96)}100%{transform:translateX(-50%) scale(1.08,1.04)}}@keyframes sparkRise{0%{opacity:0;transform:translate(-50%,0) scale(.5)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,-55px) scale(.15)}}@keyframes rotateRing{to{transform:rotate(360deg)}}@keyframes mandalaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.35}50%{transform:translateY(-12px) rotate(12deg);opacity:.7}}@keyframes diyaRise{0%{transform:translateY(3vh) scale(1)}100%{transform:translateY(-8vh) scale(.82);opacity:0}}
+@media(max-width:620px){.diya-stage{height:46vh}.intro-head{top:6vh}.intro-foot{bottom:6vh}.intro-music-note{font-size:.62rem;padding:0 18px}}
+
 </style>
 </head>
-<body class="intro-locked"><style id="twl-site-topbar-push-styles">
-  .twl-site-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000000;
-    background: linear-gradient(165deg, #7a5840 0%, #5c3d2e 45%, #4a3224 100%);
-    color: #faf6f1;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0 2px 12px rgba(40, 24, 16, 0.12);
-  }
-  .twl-site-topbar-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-    padding: 10px 16px;
-    max-width: 100%;
-  }
-  .twl-site-topbar-copy {
-    flex: 1 1 12rem;
-    min-width: 0;
-  }
-  .twl-site-topbar-copy:has(svg) {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .twl-site-topbar-copy svg { flex-shrink: 0; opacity: 0.88; stroke: currentColor; }
-  .twl-site-topbar-title {
-    display: block;
-    font-size: 0.88rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    color: #fff;
-    margin: 0;
-  }
-  .twl-site-topbar-desc {
-    margin: 3px 0 0;
-    font-size: 0.75rem;
-    line-height: 1.45;
-    color: rgba(250, 246, 241, 0.82);
-  }
-  .twl-site-topbar-meta {
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: rgba(250, 246, 241, 0.45);
-    margin-top: 4px;
-  }
-  .twl-site-topbar-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-  }
-  .twl-site-topbar-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 13px;
-    border-radius: 9px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-decoration: none !important;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    background: #faf6f1;
-    color: #4a3224;
-    transition: background 0.15s, color 0.15s, border-color 0.15s;
-    font-family: inherit;
-    white-space: nowrap;
-  }
-  .twl-site-topbar-btn:hover { background: #fff; color: #3d281c; }
-  .twl-site-topbar-btn--ghost {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.22);
-    color: #fff;
-  }
-  .twl-site-topbar-btn--ghost:hover {
-    background: rgba(255, 255, 255, 0.16);
-    color: #fff;
-  }
-  .twl-site-topbar-btn--primary {
-    background: #faf6f1;
-    color: #4a3224;
-    border-color: rgba(255, 255, 255, 0.35);
-  }
-  .twl-site-topbar-btn--primary:hover {
-    background: #fff;
-    color: #3d281c;
-  }
-  .twl-site-topbar-dismiss {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: #faf6f1;
-    width: 32px;
-    height: 32px;
-    border-radius: 9px;
-    font-size: 1.1rem;
-    line-height: 1;
-    cursor: pointer;
-    padding: 0;
-    font-family: inherit;
-  }
-  .twl-site-topbar-dismiss:hover { background: rgba(255, 255, 255, 0.16); }
-
-
-  html.has-twl-site-topbar,
-  body.has-twl-site-topbar {
-    scroll-padding-top: calc(var(--twl-site-topbar-h, 52px) + 72px);
-  }
-  body.has-twl-site-topbar {
-    padding-top: var(--twl-site-topbar-h, 52px) !important;
-  }
-  body.has-twl-site-topbar .site-nav {
-    top: var(--twl-site-topbar-h, 52px) !important;
-  }
-
-
-  @media (max-width: 640px) {
-    .twl-site-topbar-inner { padding: 8px 10px; gap: 8px; }
-    .twl-site-topbar-desc { display: none; }
-    .twl-site-topbar-meta { display: none; }
-    .twl-site-topbar-btn { padding: 6px 10px; font-size: 0.74rem; }
-  }
-</style>
-<script>
-(function () {
-  function applyTopbarPush() {
-    var bar = document.querySelector('.twl-site-topbar');
-    if (!bar || bar.style.display === 'none') return;
-    var h = Math.ceil(bar.getBoundingClientRect().height);
-    document.documentElement.style.setProperty('--twl-site-topbar-h', h + 'px');
-    document.documentElement.classList.add('has-twl-site-topbar');
-    document.body.classList.add('has-twl-site-topbar');
-  }
-  function clearTopbarPush() {
-    var bar = document.querySelector('.twl-site-topbar');
-    if (bar && bar.style.display !== 'none') return;
-    document.documentElement.classList.remove('has-twl-site-topbar');
-    document.body.classList.remove('has-twl-site-topbar');
-    document.documentElement.style.removeProperty('--twl-site-topbar-h');
-  }
-  window.twlSiteTopbarPush = applyTopbarPush;
-  window.twlSiteTopbarClear = clearTopbarPush;
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyTopbarPush);
-  } else {
-    applyTopbarPush();
-  }
-  window.addEventListener('resize', applyTopbarPush);
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', applyTopbarPush);
-  }
-  setTimeout(applyTopbarPush, 50);
-  setTimeout(applyTopbarPush, 300);
-})();
-</script>
-<div id="twl-site-manage-bar" class="twl-site-topbar" role="region" aria-label="Website manager">
-  <div class="twl-site-topbar-inner">
-    <div class="twl-site-topbar-copy">
-      <strong class="twl-site-topbar-title">You&#039;re the manager of this website</strong>
-      <p class="twl-site-topbar-desc">This is your live site. Open the workspace to customize it or share with guests.</p>
-      <div class="twl-site-topbar-meta">COUPLE_OWNER · /namrata-ashwin-na21</div>
-    </div>
-    <div class="twl-site-topbar-actions">
-      <a class="twl-site-topbar-btn twl-site-topbar-btn--ghost" href="https://theweddinglink.co/couple_workspace.php?site_uuid=b7c07d19-22ff-493f-a611-8bde9fc2923d">Customize</a>
-      <a class="twl-site-topbar-btn twl-site-topbar-btn--primary" href="https://theweddinglink.co/couple_workspace.php?site_uuid=b7c07d19-22ff-493f-a611-8bde9fc2923d">Open workspace</a>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- INTRO OVERLAY -->
-<div id="intro" aria-label="Champagne bottle opening. Tap and hold the cork to enter the invitation.">
+<body class="intro-locked">
+<!-- TRADITIONAL HINDU INTRO -->
+<div id="intro" aria-label="Traditional diya ceremony. Tap and hold the diya to enter the wedding invitation.">
   <div class="intro-controls">
     <button class="pill-btn" id="skipBtn" aria-label="Skip the intro and view the invitation">
       <svg viewBox="0 0 24 24"><path d="M6 5v14l9-7zM16 5h2v14h-2z"/></svg> Skip intro
     </button>
-    <span class="pill-btn" style="pointer-events:none" aria-hidden="true">Est. 2026</span>
+    <span class="pill-btn intro-est" aria-hidden="true">शुभ विवाह · 2026</span>
   </div>
-
 
   <div class="intro-head">
-    <div class="eyebrow">You are cordially invited</div>
+    <div class="eyebrow">॥ श्री गणेशाय नमः ॥</div>
+    <div class="intro-deity">ॐ</div>
+    <h1>With divine blessings</h1>
+    <p>Maa Vindhyavasini &amp; Lord Shiva</p>
   </div>
-
 
   <canvas id="fx" aria-hidden="true"></canvas>
 
-
-  <div class="bottle-stage" id="bottleStage">
-    <svg viewBox="0 0 220 660" role="img" aria-label="Champagne bottle">
-      <defs>
-        <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#000"/><stop offset=".1" stop-color="#0a0d0a"/><stop offset=".28" stop-color="#1c241c"/><stop offset=".4" stop-color="#465544"/><stop offset=".44" stop-color="#7e8c79"/><stop offset=".5" stop-color="#d6e0cf"/><stop offset=".55" stop-color="#5d6b58"/><stop offset=".66" stop-color="#1a201a"/><stop offset=".82" stop-color="#0b0e0b"/><stop offset="1" stop-color="#000"/>
-        </linearGradient>
-        <linearGradient id="collarGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a0a0a"/><stop offset=".5" stop-color="#3a3a3a"/><stop offset="1" stop-color="#060606"/></linearGradient>
-        <linearGradient id="foilGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a4013"/><stop offset=".18" stop-color="#b88f37"/><stop offset=".4" stop-color="#ffe9a8"/><stop offset=".5" stop-color="#fff6d4"/><stop offset=".6" stop-color="#e6b94e"/><stop offset=".82" stop-color="#9a7426"/><stop offset="1" stop-color="#4f3811"/></linearGradient>
-        <linearGradient id="labelGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#060606"/><stop offset=".5" stop-color="#1e1e1e"/><stop offset="1" stop-color="#040404"/></linearGradient>
-        <radialGradient id="medGrad"><stop offset="0" stop-color="#f3e6c4"/><stop offset="1" stop-color="#d8be8a"/></radialGradient>
-        <radialGradient id="ringGrad"><stop offset="0" stop-color="#fff2c4"/><stop offset="1" stop-color="#c9a24b"/></radialGradient>
-        <linearGradient id="corkGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c193"/><stop offset=".4" stop-color="#cda069"/><stop offset="1" stop-color="#a47a45"/></linearGradient>
-        <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
-        <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
-        <pattern id="corkTex" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="transparent"/><circle cx="2" cy="2" r="1" fill="#8a6336" opacity=".5"/><circle cx="5" cy="5" r=".8" fill="#7a5128" opacity=".5"/><circle cx="5" cy="1.5" r=".6" fill="#5e3d1c" opacity=".4"/></pattern>
-        <radialGradient id="glowGrad"><stop offset="0" stop-color="#fff2c4" stop-opacity=".9"/><stop offset="1" stop-color="#fff2c4" stop-opacity="0"/></radialGradient>
-      </defs>
-      <ellipse cx="110" cy="646" rx="96" ry="15" fill="#000" opacity=".55" filter="url(#soft)"/>
-      <path d="M84,246 C72,256 58,274 46,302 C36,326 30,356 30,394 L30,578 C30,612 60,632 110,632 C160,632 190,612 190,578 L190,394 C190,356 184,326 174,302 C162,274 148,256 136,246 C128,252 120,256 110,256 C100,256 92,252 84,246 Z" fill="url(#glassGrad)" stroke="#000" stroke-width="1"/>
-      <path d="M84,246 C72,256 58,274 46,302 C36,326 30,356 30,394 L30,578 C30,612 60,632 110,632 C160,632 190,612 190,578 L190,394 C190,356 184,326 174,302 C162,274 148,256 136,246 C128,252 120,256 110,256 C100,256 92,252 84,246 Z" fill="url(#noise)" opacity=".05" style="mix-blend-mode:overlay"/>
-      <path d="M84,300 C80,400 82,510 90,580 C98,510 96,400 98,300 Z" fill="#dfeedd" opacity=".18" filter="url(#soft)"/>
-      <rect x="88" y="300" width="4" height="270" rx="2" fill="#ffffff" opacity=".45"/>
-      <path d="M152,330 C154,440 152,540 144,585 L154,575 L156,370 Z" fill="#000" opacity=".45" filter="url(#soft)"/>
-      <path d="M94,116 C94,156 91,205 84,246 C92,253 100,257 110,257 C120,257 128,253 136,246 C129,205 126,156 126,116 Z" fill="url(#foilGrad)" stroke="#4f3811" stroke-width=".6"/>
-      <g stroke-width=".8" opacity=".5">
-        <line x1="96" y1="122" x2="92" y2="252" stroke="#7a5a1c"/><line x1="104" y1="120" x2="103" y2="252" stroke="#7a5a1c"/><line x1="112" y1="120" x2="113" y2="252" stroke="#7a5a1c"/><line x1="120" y1="120" x2="123" y2="252" stroke="#7a5a1c"/><line x1="100" y1="121" x2="98" y2="252" stroke="#fff6d4" opacity=".5"/><line x1="116" y1="120" x2="118" y2="252" stroke="#fff6d4" opacity=".5"/>
-      </g>
-      <path d="M82,250 L138,250 L138,256 L82,256 Z" fill="#3a2c0e"/>
-      <path d="M84,243 L136,243" stroke="#fff6d4" stroke-width="1" opacity=".5"/>
-      <path d="M84,246 C70,255 56,274 46,302 C40,320 37,338 36,350 L184,350 C183,338 180,320 174,302 C164,274 150,255 136,246 C128,252 120,256 110,256 C100,256 92,252 84,246 Z" fill="url(#collarGrad)" stroke="#000" stroke-width=".6"/>
-      <path d="M88,255 C96,259 102,260 110,260 C118,260 124,259 132,255" stroke="#c9a24b" stroke-width="1.1" opacity=".75" fill="none"/>
-      <path d="M44,340 C74,344 92,346 110,346 C128,346 146,344 176,340" stroke="#c9a24b" stroke-width="1.1" opacity=".55" fill="none"/>
-      <rect x="86" y="92" width="48" height="28" rx="7" fill="url(#collarGrad)" stroke="#000" stroke-width=".6"/>
-      <rect x="86" y="96" width="48" height="6" fill="#555" opacity=".5"/>
-      <ellipse cx="110" cy="92" rx="24" ry="6" fill="#0d0d0d" stroke="#444" stroke-width=".8"/>
-      <rect x="46" y="402" width="128" height="168" rx="13" fill="url(#labelGrad)" stroke="#c9a24b" stroke-width="1.4"/>
-      <rect x="52" y="407" width="116" height="158" rx="8" fill="none" stroke="#8a691f" stroke-width=".8" opacity=".8"/>
-      <line x1="72" y1="424" x2="148" y2="424" stroke="#c9a24b" stroke-width=".8" opacity=".8"/>
-      <text x="110" y="444" text-anchor="middle" font-family="Marcellus,serif" font-size="9" letter-spacing="3" fill="#d8be8a">NAMRATA TIWARI &amp; ASHWI</text>
-      <ellipse cx="110" cy="492" rx="36" ry="27" fill="url(#foilGrad)" stroke="#8a691f" stroke-width="1"/>
-      <ellipse cx="110" cy="492" rx="29" ry="21" fill="url(#medGrad)" stroke="#b89653" stroke-width=".8"/>
-      <text x="110" y="498" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-weight="600" font-size="18" fill="#2a2a2a">Champagne</text>
-      <line x1="72" y1="536" x2="148" y2="536" stroke="#c9a24b" stroke-width=".8" opacity=".8"/>
-      <text x="110" y="554" text-anchor="middle" font-family="Marcellus,serif" font-size="9" letter-spacing="3" fill="#d8be8a">Sat, 21 Nov 2026</text>
-      <circle id="neckGlow" cx="110" cy="98" r="50" fill="url(#glowGrad)"/>
-      <rect id="mouthAnchor" x="106" y="90" width="8" height="6" fill="none"/>
-      <g id="ringWrap" transform="translate(110 74)">
-        <circle id="progressTrack" r="42" fill="none" stroke-width="3"/>
-        <circle id="progressBar" r="42" fill="none" stroke-width="3" stroke-linecap="round" transform="rotate(-90)" stroke-dasharray="263.9" stroke-dashoffset="263.9" opacity="0"/>
-      </g>
-      <g id="corkGroup" tabindex="0" role="button" aria-label="Cork. Press and hold to open the bottle.">
-        <rect x="93" y="62" width="34" height="40" rx="5" fill="url(#corkGrad)"/>
-        <rect x="93" y="62" width="34" height="40" rx="5" fill="url(#corkTex)"/>
-        <path id="corkCap" d="M86,68 C86,40 90,28 110,28 C130,28 134,40 134,68 Z" fill="url(#corkGrad)" stroke="#8a6336" stroke-width=".6"/>
-        <path d="M86,68 C86,40 90,28 110,28 C130,28 134,40 134,68 Z" fill="url(#corkTex)"/>
-        <ellipse cx="100" cy="46" rx="6" ry="13" fill="#fbe8c8" opacity=".45" filter="url(#soft)"/>
-        <rect x="86" y="64" width="48" height="4" rx="2" fill="#caa24c"/>
-        <line x1="100" y1="36" x2="100" y2="68" stroke="#caa24c" stroke-width="1.4"/>
-        <line x1="110" y1="32" x2="110" y2="68" stroke="#caa24c" stroke-width="1.4"/>
-        <line x1="120" y1="36" x2="120" y2="68" stroke="#caa24c" stroke-width="1.4"/>
-      </g>
-    </svg>
+  <div class="diya-stage" id="diyaStage">
+    <div class="mandala mandala-a" aria-hidden="true">✦</div>
+    <div class="mandala mandala-b" aria-hidden="true">✧</div>
+    <div class="petal-ring" aria-hidden="true"></div>
+    <div class="diya-glow"></div>
+    <button class="diya-button" id="diyaButton" aria-label="Light the ceremonial diya and enter the invitation">
+      <span class="flame flame-outer"></span>
+      <span class="flame flame-inner"></span>
+      <span class="flame-spark"></span>
+      <span class="diya-bowl"><i></i><b></b></span>
+    </button>
   </div>
-
 
   <div class="intro-foot">
-    <p id="instruction" class="hint-pulse" aria-live="polite">
-      Tap &amp; hold to open
-      <span class="key">Hold &nbsp;·&nbsp; Space / Enter on desktop</span>
+    <p id="instruction" class="hint-pulse">
+      Tap &amp; hold the diya
+      <span class="key">Light the diya to begin</span>
     </p>
+    <p class="intro-music-note">A traditional Ganpati Vandana will accompany the welcome.</p>
   </div>
-
 
   <div id="flash"></div>
 </div>
-
 
 <!-- HERO -->
 <header class="hero" id="top">
@@ -763,217 +554,36 @@ body.site-revealed .twl-claim-wrap{opacity:1;visibility:visible}
 
 <script>
 "use strict";
-const CONFIG = {
-  BOTTLE_IMAGE_URL: "/assets/templates/royal_pop/champagne_bottle.webp",
-  HOLD_DURATION: 1500,
-  POP_SOUND_DELAY: 0,
-  SOUNDS: {
-    tensionSound: "/assets/templates/royal_pop/stretching_sound2.mp3",
-    popSound:     "/assets/templates/royal_pop/cork_open.mp3",
-    sparkleSound: "",
-    ambientMusic: "/assets/templates/royal_pop/background_music.mp3"  }
+/* Traditional diya intro + GitHub Pages-safe audio */
+const CONFIG={
+  HOLD_DURATION:1100,
+  BHajanURL:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Aarti_Puja,_Ganpati_Vandana.ogg"
 };
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-
-const Sound = {
-  muted:false, tracks:{}, ctx:null, buffers:{}, loading:{},
-  ONESHOTS:{ popSound:true, sparkleSound:true },
-  init(){ for(const [name,url] of Object.entries(CONFIG.SOUNDS)){ if(url){ try{ const a=new Audio(url); a.preload="auto"; if(name==="ambientMusic"){a.loop=true;a.volume=.4;} this.tracks[name]=a; }catch(e){} } } },
-  primed:false,
-  prime(){
-    if(!this.primed){ this.primed=true;
-      for(const name in this.tracks){ if(!this.ONESHOTS[name]) continue; const a=this.tracks[name];
-        try{ a.muted=true; const restore=()=>{ a.removeEventListener("ended",restore); try{ a.pause(); a.currentTime=0; a.muted=this.muted; }catch(e){} };
-          a.addEventListener("ended",restore); const p=a.play(); if(p&&p.catch) p.catch(()=>{ try{ a.muted=this.muted; }catch(e){} }); setTimeout(restore,1200);
-        }catch(e){} } }
-    if(!this.ctx){ try{ const AC=window.AudioContext||window.webkitAudioContext; if(AC) this.ctx=new AC(); }catch(e){} }
-    if(this.ctx && this.ctx.state==="suspended"){ this.ctx.resume().catch(()=>{}); }
-    if(!this.ctx) return;
-    try{ const b=this.ctx.createBuffer(1,1,22050); const s=this.ctx.createBufferSource(); s.buffer=b; s.connect(this.ctx.destination); s.start(0); }catch(e){}
-    for(const [name,url] of Object.entries(CONFIG.SOUNDS)){
-      if(!url || !this.ONESHOTS[name] || this.buffers[name] || this.loading[name]) continue;
-      this.loading[name]=true;
-      fetch(url).then(r=>r.arrayBuffer()).then(buf=>this.ctx.decodeAudioData(buf)).then(dec=>{ this.buffers[name]=this._trimLeadingSilence(dec); }).catch(()=>{ this.loading[name]=false; });
-    }
-  },
-  _trimLeadingSilence(buf){ try{ const thresh=0.012, ch0=buf.getChannelData(0); let start=0; while(start<ch0.length && Math.abs(ch0[start])<thresh) start++;
-      if(start<=64 || start>=ch0.length) return buf; const len=buf.length-start; const out=this.ctx.createBuffer(buf.numberOfChannels,len,buf.sampleRate);
-      for(let c=0;c<buf.numberOfChannels;c++){ out.getChannelData(c).set(buf.getChannelData(c).subarray(start)); } return out;
-    }catch(e){ return buf; } },
-  play(name){
-    if(this.muted) return;
-    if(this.ctx && this.buffers[name] && this.ctx.state==="running"){ try{ const src=this.ctx.createBufferSource(); src.buffer=this.buffers[name]; src.connect(this.ctx.destination); src.start(); return; }catch(e){} }
-    if(this.ctx && this.ctx.state!=="running"){ try{ this.ctx.resume(); }catch(e){} }
-    const a=this.tracks[name]; if(a){ try{ a.muted=this.muted; a.currentTime=0; a.play().catch(()=>{}); }catch(e){} }
-  },
-  stop(name){ const a=this.tracks[name]; if(a){ try{a.pause();}catch(e){} } },
-  setMuted(m){ this.muted=m; Object.values(this.tracks).forEach(a=>{ try{ a.muted=m; }catch(e){} }); }
-};
-Sound.init();
-
-
-const muteBtn=document.getElementById("muteBtn");
-muteBtn.addEventListener("click",()=>{
-  Sound.setMuted(!Sound.muted);
-  muteBtn.setAttribute("aria-pressed",String(Sound.muted));
-  document.getElementById("iconSound").style.display=Sound.muted?"none":"block";
-  document.getElementById("iconMuted").style.display=Sound.muted?"block":"none";
-});
-
-
-(function applyBottleImage(){
-  if(!CONFIG.BOTTLE_IMAGE_URL) return;
-  const stage = document.getElementById("bottleStage");
-  const svg = stage.querySelector("svg");
-  stage.classList.add("photo-mode");
-  stage.style.setProperty("--photo-scale", "1.15");
-  const img = document.createElement("img");
-  img.src = CONFIG.BOTTLE_IMAGE_URL; img.alt = "Champagne bottle"; img.className = "bottle-photo";
-  stage.style.position = "relative"; stage.insertBefore(img, svg);
-  img.addEventListener("error", ()=>{ // fall back to drawn SVG bottle if the image is missing
-    img.remove(); stage.classList.remove("photo-mode");
-    svg.querySelectorAll("[data-hidden-by-photo]").forEach(el=>{ el.style.display=""; el.removeAttribute("data-hidden-by-photo"); });
-  });
-  svg.querySelectorAll("path,rect,ellipse,circle,text,line").forEach(el=>{
-    if(!el.closest("#corkGroup") && !el.closest("#ringWrap") && el.id !== "neckGlow" && el.id !== "mouthAnchor"){
-      el.style.display = "none"; el.setAttribute("data-hidden-by-photo","1");
-    }
-  });
-})();
-
-
+const reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const intro=document.getElementById("intro");
-const corkGroup=document.getElementById("corkGroup");
-const progressBar=document.getElementById("progressBar");
-const neckGlow=document.getElementById("neckGlow");
-const bottleStage=document.getElementById("bottleStage");
+const diyaButton=document.getElementById("diyaButton");
+const diyaStage=document.getElementById("diyaStage");
 const instruction=document.getElementById("instruction");
-const flash=document.getElementById("flash");
 const canvas=document.getElementById("fx");
 const fxctx=canvas.getContext("2d");
-
-
-const RING_CIRCUM = 2 * Math.PI * 40;
-progressBar.setAttribute("stroke-dasharray", RING_CIRCUM.toFixed(1));
-
-
-let holding=false, popped=false, progress=0, introActive=true, rafId=null, lastTime=performance.now();
-
-
-function startHold(e){
-  if(popped || !introActive) return;
-  if(e && e.cancelable) e.preventDefault();
-  if(!holding){ holding=true; Sound.prime(); instruction.classList.remove("hint-pulse"); instruction.firstChild.textContent="Keep holding…"; neckGlow.style.opacity="1"; progressBar.style.opacity="1"; Sound.play("tensionSound"); }
-}
-function endHold(){
-  if(popped) return;
-  if(holding){ holding=false; Sound.stop("tensionSound"); if(progress<1){ instruction.firstChild.textContent="Tap & hold to open"; instruction.classList.add("hint-pulse"); } }
-}
-corkGroup.addEventListener("pointerdown", startHold);
-window.addEventListener("pointerup", endHold);
-window.addEventListener("pointercancel", endHold);
-bottleStage.addEventListener("pointerdown", startHold);
-corkGroup.addEventListener("keydown",(e)=>{ if((e.code==="Space"||e.code==="Enter") && !e.repeat){ e.preventDefault(); startHold(e); } });
-corkGroup.addEventListener("keyup",(e)=>{ if(e.code==="Space"||e.code==="Enter"){ e.preventDefault(); endHold(); } });
-window.addEventListener("keydown",(e)=>{ if(introActive && (e.code==="Space")) e.preventDefault(); });
-intro.addEventListener("touchmove",(e)=>{ if(introActive) e.preventDefault(); },{passive:false});
-
-
-function tick(now){
-  const dt = now - lastTime; lastTime = now;
-  if(!popped){
-    if(holding) progress += dt / CONFIG.HOLD_DURATION; else progress -= dt / 650;
-    progress = Math.max(0, Math.min(1, progress));
-    progressBar.setAttribute("stroke-dashoffset", (RING_CIRCUM * (1 - progress)).toFixed(1));
-    progressBar.style.opacity = progress > 0.001 ? "1" : "0";
-    neckGlow.style.opacity = (progress * 0.9).toFixed(2);
-    const lift = -progress * 16;
-    const wob = reduceMotion ? 0 : Math.sin(now/55) * progress * 4;
-    corkGroup.setAttribute("transform", `translate(0 ${lift}) rotate(${wob} 100 60)`);
-    if(!reduceMotion && holding && progress>0.05){ const amp=progress*5; const jx=(Math.random()-0.5)*amp; const jy=(Math.random()-0.5)*amp; bottleStage.style.setProperty("--shake", `translate(${jx.toFixed(2)}px, ${jy.toFixed(2)}px)`); }
-    else { bottleStage.style.setProperty("--shake", "translate(0,0)"); }
-    if(holding && progress>0.3 && Math.random() < progress*0.5){ spawnBubble(); }
-    if(holding && progress >= 1) doPop();
-  }
-  updateParticles(dt);
-  if(introActive) rafId = requestAnimationFrame(tick);
-}
-
-
-let particles = [];
-function resizeCanvas(){ canvas.width = intro.clientWidth; canvas.height = intro.clientHeight; }
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
-function mouthPos(){ const anchor=document.getElementById("mouthAnchor"); const r=anchor.getBoundingClientRect(); const ir=intro.getBoundingClientRect(); return { x:r.left+r.width/2-ir.left, y:r.top+r.height/2-ir.top }; }
-const GOLDS = ["#ffe9b0","#f0d79a","#c9a24b","#fff6da"];
-const CONFETTI = ["#c9a24b","#5d1a2c","#e4b8b1","#f0d79a"];
-function spawnBubble(){ const m=mouthPos(); particles.push({x:m.x+(Math.random()-0.5)*10,y:m.y,vx:(Math.random()-0.5)*0.4,vy:-(0.5+Math.random()*0.7),size:1.5+Math.random()*2.5,life:0,max:900+Math.random()*500,type:"bubble",color:GOLDS[Math.floor(Math.random()*GOLDS.length)]}); }
-function burst(){
-  const m=mouthPos(); const mult=reduceMotion?0.35:1;
-  const tiltRad=(parseFloat(getComputedStyle(bottleStage).getPropertyValue("--tilt"))||0)*Math.PI/180;
-  const axis=-Math.PI/2+tiltRad;
-  for(let i=0;i<Math.round(70*mult);i++){ const ang=axis+(Math.random()-0.5)*0.9; const sp=6+Math.random()*11; particles.push({x:m.x,y:m.y,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp,size:1+Math.random()*2.5,life:0,max:700+Math.random()*500,type:"spray",color:Math.random()<0.5?"#fff6da":"#f0d79a"}); }
-  for(let i=0;i<Math.round(60*mult);i++){ const ang=Math.random()*Math.PI*2, sp=2+Math.random()*9; particles.push({x:m.x,y:m.y,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp-2,size:1.5+Math.random()*2.5,life:0,max:900+Math.random()*700,type:"sparkle",color:GOLDS[Math.floor(Math.random()*GOLDS.length)],tw:Math.random()*6.28}); }
-  for(let i=0;i<Math.round(34*mult);i++){ particles.push({x:m.x+(Math.random()-0.5)*30,y:m.y,vx:(Math.random()-0.5)*1.2,vy:-(1+Math.random()*2.4),size:2+Math.random()*4,life:0,max:1100+Math.random()*700,type:"bubble",color:"#f0d79a"}); }
-  for(let i=0;i<Math.round(18*mult);i++){ const ang=Math.random()*Math.PI*2, sp=0.5+Math.random()*3; particles.push({x:m.x,y:m.y,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp-1,size:5+Math.random()*9,life:0,max:1400+Math.random()*700,type:"light",color:"#ffe9b0"}); }
-  for(let i=0;i<Math.round(26*mult);i++){ const ang=axis+(Math.random()-0.5)*1.6, sp=4+Math.random()*9; particles.push({x:m.x,y:m.y,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp,w:3+Math.random()*4,h:6+Math.random()*7,life:0,max:1600+Math.random()*900,type:"confetti",color:CONFETTI[Math.floor(Math.random()*CONFETTI.length)],rot:Math.random()*6.28,vr:(Math.random()-0.5)*0.3}); }
-}
-function updateParticles(dt){
-  const g=0.018*dt; fxctx.clearRect(0,0,canvas.width,canvas.height);
-  for(let i=particles.length-1;i>=0;i--){ const p=particles[i]; p.life+=dt; if(p.life>=p.max){ particles.splice(i,1); continue; } const t=p.life/p.max; const alpha=1-t;
-    if(p.type==="bubble"){ p.x+=p.vx; p.y+=p.vy; p.vy*=0.992; p.vx*=0.99; fxctx.globalAlpha=alpha*0.8; fxctx.strokeStyle=p.color; fxctx.lineWidth=1; fxctx.beginPath(); fxctx.arc(p.x,p.y,p.size,0,6.28); fxctx.stroke(); fxctx.globalAlpha=alpha*0.25; fxctx.fillStyle=p.color; fxctx.fill(); }
-    else if(p.type==="spray"){ p.vy+=g; p.x+=p.vx; p.y+=p.vy; fxctx.globalAlpha=alpha; fxctx.fillStyle=p.color; fxctx.beginPath(); fxctx.ellipse(p.x,p.y,p.size*0.7,p.size,0,0,6.28); fxctx.fill(); }
-    else if(p.type==="sparkle"){ p.vy+=g*0.4; p.x+=p.vx; p.y+=p.vy; p.vx*=0.985; p.vy*=0.99; p.tw+=0.3; const tw=(Math.sin(p.tw)*0.4+0.6); fxctx.globalAlpha=alpha*tw; fxctx.fillStyle=p.color; fxctx.shadowBlur=8; fxctx.shadowColor=p.color; fxctx.beginPath(); fxctx.arc(p.x,p.y,p.size,0,6.28); fxctx.fill(); fxctx.shadowBlur=0; }
-    else if(p.type==="light"){ p.vy+=g*0.2; p.x+=p.vx; p.y+=p.vy; p.vx*=0.97; p.vy*=0.97; const grd=fxctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.size); grd.addColorStop(0,`rgba(255,233,176,${alpha*0.7})`); grd.addColorStop(1,"rgba(255,233,176,0)"); fxctx.globalAlpha=1; fxctx.fillStyle=grd; fxctx.beginPath(); fxctx.arc(p.x,p.y,p.size,0,6.28); fxctx.fill(); }
-    else if(p.type==="confetti"){ p.vy+=g*0.7; p.x+=p.vx; p.y+=p.vy; p.vx*=0.99; p.rot+=p.vr; fxctx.globalAlpha=alpha; fxctx.fillStyle=p.color; fxctx.save(); fxctx.translate(p.x,p.y); fxctx.rotate(p.rot); fxctx.fillRect(-p.w/2,-p.h/2,p.w,p.h); fxctx.restore(); }
-  }
-  fxctx.globalAlpha=1;
-}
-
-
-function doPop(){
-  if(popped) return; popped=true; holding=false; progress=1;
-  intro.classList.add("pop-started");
-  progressBar.style.opacity="0"; neckGlow.style.opacity="0"; corkGroup.style.opacity="0";
-  bottleStage.style.setProperty("--shake","translate(0,0)"); instruction.style.opacity="0";
-  const m=mouthPos();
-  const fly=document.createElement("div"); fly.className="flying-cork";
-  const cw=bottleStage.clientWidth*0.16;
-  fly.style.width=cw+"px"; fly.style.height=(cw*1.25)+"px"; fly.style.left=(m.x-cw/2)+"px"; fly.style.top=(m.y-cw*1.1)+"px";
-  const tiltRad=(parseFloat(getComputedStyle(bottleStage).getPropertyValue("--tilt"))||0)*Math.PI/180;
-  const dist=window.innerHeight*0.72;
-  fly.style.setProperty("--fx",(Math.sin(tiltRad)*dist).toFixed(0)+"px");
-  fly.style.setProperty("--fy",(-Math.cos(tiltRad)*dist).toFixed(0)+"px");
-  intro.appendChild(fly);
-  requestAnimationFrame(()=> fly.classList.add("go"));
-  const delay=Math.max(0, CONFIG.POP_SOUND_DELAY|0);
-  if(delay) setTimeout(()=>Sound.play("popSound"), delay); else Sound.play("popSound");
-  if(!reduceMotion) flash.classList.add("fire");
-  burst(); Sound.play("sparkleSound");
-  bottleStage.classList.add("gone");
-  setTimeout(revealSite, reduceMotion ? 350 : 900);
-}
-
-
-document.getElementById("skipBtn").addEventListener("click",()=>{ popped=true; holding=false; revealSite(); });
-
-
-let revealed=false;
-function revealSite(){
-  if(revealed) return; revealed=true;
-  intro.classList.add("revealing");
-  document.body.classList.remove("intro-locked");
-  document.body.classList.add("site-revealed");
-  Sound.play("ambientMusic");
-  setTimeout(()=>{ intro.classList.add("hidden"); introActive=false; if(rafId) cancelAnimationFrame(rafId); particles=[]; }, 1200);
-  startSparkles(); startParallax();
-}
-
-
-rafId = requestAnimationFrame(tick);
-window.addEventListener("load",()=>{ try{ corkGroup.focus({preventScroll:true}); }catch(e){} });
-
+let holding=false,progress=0,entered=false,introActive=true,rafId=null,lastTime=performance.now();
+const bhajan=new Audio(CONFIG.BHajanURL); bhajan.loop=true; bhajan.volume=.42; bhajan.preload="auto";
+let muted=false;
+const muteBtn=document.getElementById("muteBtn");
+function syncMute(){ bhajan.muted=muted; muteBtn.setAttribute("aria-pressed",String(muted)); document.getElementById("iconSound").style.display=muted?"none":"block"; document.getElementById("iconMuted").style.display=muted?"block":"none"; }
+muteBtn.addEventListener("click",()=>{muted=!muted;syncMute(); if(!muted && entered) bhajan.play().catch(()=>{});}); syncMute();
+function primeAudio(){ if(!muted) bhajan.play().catch(()=>{}); }
+function startHold(e){ if(entered||!introActive)return; if(e&&e.cancelable)e.preventDefault(); holding=true; primeAudio(); instruction.classList.remove("hint-pulse"); instruction.firstChild.textContent="Lighting the diya…"; intro.classList.add("lit"); }
+function endHold(){ if(entered)return; holding=false; if(progress<1){ instruction.firstChild.textContent="Tap & hold the diya"; instruction.classList.add("hint-pulse"); } }
+diyaButton.addEventListener("pointerdown",startHold); window.addEventListener("pointerup",endHold); window.addEventListener("pointercancel",endHold);
+diyaButton.addEventListener("keydown",e=>{if((e.code==="Space"||e.code==="Enter")&&!e.repeat){e.preventDefault();startHold(e)}}); diyaButton.addEventListener("keyup",e=>{if(e.code==="Space"||e.code==="Enter"){e.preventDefault();endHold()}});
+document.getElementById("skipBtn").addEventListener("click",()=>{primeAudio(); revealSite();});
+function resizeCanvas(){canvas.width=intro.clientWidth;canvas.height=intro.clientHeight} resizeCanvas(); window.addEventListener("resize",resizeCanvas);
+const petals=[]; for(let i=0;i<30;i++){petals.push({x:Math.random(),y:Math.random(),s:1+Math.random()*2.5,v:.00003+Math.random()*.00008,a:Math.random()*6.28})}
+function drawParticles(dt){fxctx.clearRect(0,0,canvas.width,canvas.height); for(const p of petals){p.y-=p.v*dt;p.a+=.001*dt;if(p.y<-.03)p.y=1.03;const x=p.x*canvas.width+Math.sin(p.a)*10,y=p.y*canvas.height;fxctx.globalAlpha=.15+.35*Math.abs(Math.sin(p.a));fxctx.fillStyle="#f0d79a";fxctx.beginPath();fxctx.arc(x,y,p.s,0,Math.PI*2);fxctx.fill()}fxctx.globalAlpha=1}
+function tick(now){const dt=now-lastTime;lastTime=now;if(!entered){if(holding)progress+=dt/CONFIG.HOLD_DURATION;else progress-=dt/700;progress=Math.max(0,Math.min(1,progress));drawParticles(dt);if(progress>=1)revealSite();rafId=requestAnimationFrame(tick)}}
+function revealSite(){if(entered)return;entered=true;holding=false;introActive=false;intro.classList.add("revealing");diyaStage.classList.add("lit");instruction.style.opacity="0";document.body.classList.remove("intro-locked");document.body.classList.add("site-revealed");primeAudio();setTimeout(()=>{intro.classList.add("hidden");if(rafId)cancelAnimationFrame(rafId)},1100);startSparkles();startParallax();}
+rafId=requestAnimationFrame(tick);
 
 function startSparkles(){
   if(reduceMotion) return;
@@ -1058,7 +668,7 @@ document.querySelectorAll('.faq-item .faq-q').forEach(btn=>{
       const fd=new FormData(form);
       const res=await fetch('/actions/rsvp_submit.php',{method:'POST',body:fd});
       const j=await res.json().catch(()=>({ok:false,error:'bad_json'}));
-      if(j.ok){ msg.textContent='Thank you! Your response has been noted. 🥂'; form.querySelectorAll('input,select,textarea,button').forEach(el=>{ if(el.name!=='site_slug') el.disabled=true; }); }
+      if(j.ok){ msg.textContent='Thank you! Your response has been noted. 🙏'; form.querySelectorAll('input,select,textarea,button').forEach(el=>{ if(el.name!=='site_slug') el.disabled=true; }); }
       else { msg.textContent='Error: '+(j.error||'Could not submit'); if(btn) btn.disabled=false; }
     }catch(err){ msg.textContent='Network error. Please try again.'; if(btn) btn.disabled=false; }
   });
